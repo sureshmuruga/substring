@@ -18,6 +18,8 @@ def maxchar(st,n):
     count=[0]*256
     for i in range(n):
         count[ord(st[i])]+=1
+         #print(count[ord(st[i])],ord(st[i]),st[i])
+    #print("end",st)
     maxdist=0
     for i in range(256):
         if(count[i]!=0):
